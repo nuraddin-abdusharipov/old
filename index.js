@@ -8,7 +8,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // ⚠️ TOKENNI keyin .env ga o‘tkazganing yaxshi
-const BOT_TOKEN = "8771407234:AAGculoSuCYdIhsG1uzgCKTY37HP608uXzo";
+const BOT_TOKEN = "8516628447:AAFKh4VCAa9fuIGU81DVp19Brg4rc58z7lg";
 
 if (!BOT_TOKEN) {
   throw new Error("BOT_TOKEN topilmadi.");
@@ -43,10 +43,10 @@ app.get("/health", (req, res) => {
 bot.start(async (ctx) => {
   try {
     const keyboard = Markup.inlineKeyboard([
-      [Markup.button.webApp("Ochish", "https://frankburger.netlify.app/")],
+      [Markup.button.webApp("Ochish", "https://nuraddin-abdusharipov.github.io/oldkhivabot/")],
     ]);
 
-    const text = `Salom, ${ctx.from.first_name}! Frank Burger botiga xush kelibsiz!`;
+    const text = `Salom, ${ctx.from.first_name}! Kirim chiqim botga xush kelibsiz!`;
 
     if (fs.existsSync(logo)) {
       await ctx.replyWithPhoto(
