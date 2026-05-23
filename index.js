@@ -43,7 +43,7 @@ app.get("/health", (req, res) => {
 bot.start(async (ctx) => {
   try {
     const keyboard = Markup.inlineKeyboard([
-      [Markup.button.webApp("Ochish", "https://nuraddin-abdusharipov.github.io/oldkhivabot/")],
+      [Markup.button.webApp("Ochish", "https://oldkhivas.netlify.app/")],
     ]);
 
     const text = `Salom, ${ctx.from.first_name}! Kirim chiqim botga xush kelibsiz!`;
